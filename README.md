@@ -9,14 +9,13 @@ model as follow:
 
 
 a-ℳc1 → HMI_ECU (Human Machine Interface) with 2x16 LCD and 4x4 keypad.
-This MCU is responsible only to take the password entered by the user and to display the required instruction by LCD.
-	-LCD and Keypad in the HAL layer.
-	-GPIO, UART,and Timer in the MCAL layer.
+This MCU is responsible only to take the password entered by the user and to display the required instruction by LCD. 
+-LCD and Keypad in the HAL layer.
+-GPIO, UART,and Timer in the MCAL layer.
 
-b-ℳc2 → Control_ECU with EEPROM, Buzzer, and Dc-Motor.
-This MCU is responisble to compare the tow passwords and to save it in the EEPROM in case it was right, and to resore it when it is needed.
-	-buzzer,DC-MOTOR and EEPROM in the HAL layer.
-	-GPIO, I2C, UART,and Timer in the MCAL layer.
+b-ℳc2 → Control_ECU with EEPROM, Buzzer, and Dc-Motor. This MCU is responsible to compare the two passwords and to save it in the EEPROM in case it was right, and to restore it when it is needed.
+-buzzer, DC-MOTOR and EEPROM in the HAL layer. 
+-GPIO, I2C, UART, and Timer in the MCAL layer.
 
 3. The system asks the user to enter a password and confirm it,if he did not enter the same password the system asks him to start to make the password and confirm it.
 
